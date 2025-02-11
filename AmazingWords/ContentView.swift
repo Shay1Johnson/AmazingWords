@@ -7,6 +7,7 @@ import SwiftUI
         @State private var displayedWord = ""
         @State private var guessedLetters = Set<Character>()
         @State private var attemptsLeft = 7
+        @State private var isCorrectGuess = false
         
         init() {
             startNewGame()
@@ -36,8 +37,13 @@ import SwiftUI
                     }
                 }
                 displayedWord = String(updatedWord)
+                
+                //turn green
+                isCorrectGuess = true
             } else {
                 attemptsLeft -= 1
+                isCorrectGuess = false
+                //turn red
             }
         }
         
