@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6E9A20C02D5BDB5B00F554F0 /* SJCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9A20BF2D5BDB5B00F554F0 /* SJCategories.swift */; };
+		6E9A20C22D5BDCF000F554F0 /* SJ2NDCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9A20C12D5BDCF000F554F0 /* SJ2NDCategories.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6E7CF8542D5170D800C650F3 /* AmazingWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9A20BF2D5BDB5B00F554F0 /* SJCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJCategories.swift; sourceTree = "<group>"; };
+		6E9A20C12D5BDCF000F554F0 /* SJ2NDCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJ2NDCategories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +39,8 @@
 		6E7CF84B2D5170D800C650F3 = {
 			isa = PBXGroup;
 			children = (
+				6E9A20BF2D5BDB5B00F554F0 /* SJCategories.swift */,
+				6E9A20C12D5BDCF000F554F0 /* SJ2NDCategories.swift */,
 				6E7CF8562D5170D800C650F3 /* AmazingWords */,
 				6E7CF8552D5170D800C650F3 /* Products */,
 			);
@@ -119,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9A20C02D5BDB5B00F554F0 /* SJCategories.swift in Sources */,
+				6E9A20C22D5BDCF000F554F0 /* SJ2NDCategories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

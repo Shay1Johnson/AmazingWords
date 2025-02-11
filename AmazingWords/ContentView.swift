@@ -18,7 +18,7 @@ import SwiftUI
                 displayedWord = String(repeating: "_", count: currentWord.count)
                 guessedLetters.removeAll()
                 attemptsLeft = 7
-                
+               
             }
         }
         
