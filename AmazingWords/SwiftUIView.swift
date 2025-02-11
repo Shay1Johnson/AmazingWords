@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct LoginScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Amazing Words")
+        Image("")
     }
 }
 
 #Preview {
-    SwiftUIView()
+    LoginScreen()
 }
