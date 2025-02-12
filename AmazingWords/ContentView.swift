@@ -6,8 +6,29 @@ import SwiftUI
         @State private var currentWord = ""
         @State private var displayedWord = ""
         @State private var guessedLetters = Set<Character>()
+        @State private var incorrectLetters = Set<Character>()
         @State private var attemptsLeft = 7
         @State private var isCorrectGuess = false
+        var appleImages: String {
+            switch attemptsLeft {
+            case 1: "BittenApple_Full"
+            case 2: "BittenApple_7"
+            case 3: "BittenApple_6"
+            case 4: "BittenApple_5"
+            case 5: "BittenApple_4"
+            case 6: "BittenApple_3"
+            case 7: "BittenApple_2"
+            case 8: "BittenApple_1"
+            default: "WhiteBackground"
+                
+            }
+        }
+        
+//        var guessColors: Color {
+//            sw
+//        }
+        
+        
         
         init() {
             startNewGame()
@@ -41,9 +62,11 @@ import SwiftUI
                 //turn green
                 isCorrectGuess = true
             } else {
+                incorrectLetters.insert(letter)
                 attemptsLeft -= 1
-                isCorrectGuess = false
+                //isCorrectGuess = false
                 //turn red
+                // where to add apple
             }
         }
         
@@ -68,7 +91,7 @@ import SwiftUI
                         Image(.whiteBackground)
                             .resizable()
                             .scaledToFit()
-                        Image("BittenApple_Full")
+                        Image(appleImages)
                             .resizable()
                             .scaledToFit()
                     }
@@ -83,7 +106,11 @@ import SwiftUI
                                 Text(String(letter))
                                     .font(.title2)
                                     .frame(width: 40, height: 40)
-                                    .background(guessedLetters.contains(letter) ? Color.green : Color.gray)
+                                    .background(
+                                        guessedLetters.contains(letter) ?
+                                        (currentWord.contains(letter) ? Color.green : Color.red) : Color.gray
+                                    )
+                                    
                                     .foregroundColor(.white)
                                     .clipShape(Circle())
                             }
