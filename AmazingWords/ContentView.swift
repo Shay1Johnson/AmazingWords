@@ -1,6 +1,6 @@
 
 import SwiftUI
-
+//test
     struct ContentView: View {
         @State private var words = ["SWIFT", "HANGMAN", "APPLE", "CODE", "DEVELOPER", "VARIABLES", "CONSTANTS", "TYPES", "INTEGER", "DOUBLE", "BOOLEAN", "STRING", "COMMENTS", "BASIC OPERATORS", "CONDITIONALS", "FUNCTIONS", "ARRAYS", "LOOPS", "STRUCTS", "ENUMS", "OPTIONALS", "CLASSES", "INHERITANCE"]
         @State private var currentWord = ""
