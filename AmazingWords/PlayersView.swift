@@ -46,7 +46,6 @@ struct PlayerView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: 50)
-                            .background(Color(hex: "E02020"))
                             .cornerRadius(10)
                     }
                     
@@ -57,7 +56,6 @@ struct PlayerView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: 50)
-                            .background(Color(hex: "2700FF"))
                             .cornerRadius(10)
                     }
                 }
@@ -87,7 +85,6 @@ struct PlayerView: View {
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
         PlayerView()
-        }
     }
 }
 
@@ -103,7 +100,5 @@ extension Color {
         } else {
             self.init(.black)
         }
-    }
-}
     }
 }
