@@ -1,8 +1,8 @@
 //
-//  AmazingWordsApp.swift
+//  AmazingWords.swift
 //  AmazingWords
 //
-//  Created by Sharnese Johnson on 2/3/25.
+//  Created by Ronald Smith on 2/17/25.
 //
 
 import SwiftUI

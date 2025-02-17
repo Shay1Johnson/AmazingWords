@@ -7,40 +7,45 @@
 
 import SwiftUI
 
-struct PlayersView: View {
+struct PlayerView: View {
     var body: some View {
         ZStack {
-            Image("paperBackground")
+            Image(.paperBackground)
+
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
             
             VStack {
+                Image("AWLogoPlayerScreen")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 100) // Adjust height as needed
+                    .padding(.top, 50) // Moves it toward upper middle
+                
                 ZStack {
-                    Image("AnimationScreenLogo")
+                    Image(.whiteBackground)
+                        .resizable()
+                        .scaledToFit()
+                        .scaleEffect(0.75)
+                        .padding()
                     
-                    ZStack {
-                        Image("whiteBackground")
-                            .resizable()
-                            .scaledToFit()
-                        
-                        Image("appleImages")
-                            .resizable()
-                            .scaledToFit()
-                    }
+                    Image("BittenApple_Full")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 150)
+                        .position(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 4)
+                    
                 }
                 
                 Spacer()
                 
                 VStack(spacing: 20) {
-                    Button(action: {
-                        // 1 Player action
-                    }) {
+                    NavigationLink(destination: Categories()) {
                         Image("1PlayerButton")
                             .resizable()
                             .scaledToFit()
                             .frame(height: 50)
-                            .background(Color(hex: "E02020"))
                             .cornerRadius(10)
                     }
                     
@@ -51,13 +56,35 @@ struct PlayersView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: 50)
-                            .background(Color(hex: "2700FF"))
                             .cornerRadius(10)
                     }
                 }
                 .padding(.bottom, 50)
             }
+            
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        // Info button action
+                    }) {
+                        Image("InfoButton")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 40) // Adjust size as needed
+                    }
+                    .padding(.trailing, 20)
+                    .padding(.bottom, 20)
+                }
+            }
         }
+    }
+}
+
+struct PlayerView_Previews: PreviewProvider {
+    static var previews: some View {
+        PlayerView()
     }
 }
 
@@ -73,11 +100,5 @@ extension Color {
         } else {
             self.init(.black)
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
