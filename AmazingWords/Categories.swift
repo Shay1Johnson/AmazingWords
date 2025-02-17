@@ -18,8 +18,8 @@ struct Categories: View {
             
             HStack {
                 
-                Button() {
-                    
+                NavigationLink {
+                    ContentView()
                 } label: {
                     Image("MSUAppleButton")
                 }

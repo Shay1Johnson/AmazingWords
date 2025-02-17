@@ -7,18 +7,18 @@ struct ContentView: View {
     @State private var displayedWord = ""
     @State private var guessedLetters = Set<Character>()
     @State private var incorrectLetters = Set<Character>()
-    @State private var attemptsLeft = 7
+    @State private var attemptsLeft = 9
     @State private var isCorrectGuess = false
     var appleImages: String {
         switch attemptsLeft {
-        case 1: "BittenApple_Full"
-        case 2: "BittenApple_7"
-        case 3: "BittenApple_6"
-        case 4: "BittenApple_5"
-        case 5: "BittenApple_4"
-        case 6: "BittenApple_3"
-        case 7: "BittenApple_2"
-        case 8: "BittenApple_1"
+        case 1: "BittenApple_7"
+        case 2: "BittenApple_6"
+        case 3: "BittenApple_5"
+        case 4: "BittenApple_4"
+        case 5: "BittenApple_3"
+        case 6: "BittenApple_2"
+        case 7: "BittenApple_1"
+        case 8: "BittenApple_Full"
         default: "WhiteBackground"
             
         }
@@ -39,7 +39,7 @@ struct ContentView: View {
             currentWord = randomWord
             displayedWord = String(repeating: "_", count: currentWord.count)
             guessedLetters.removeAll()
-            attemptsLeft = 7
+            attemptsLeft = 9
             
         }
     }

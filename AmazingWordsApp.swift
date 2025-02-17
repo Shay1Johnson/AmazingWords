@@ -11,7 +11,7 @@ import SwiftUI
 struct AmazingWordsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlayerView()
         }
     }
 }
