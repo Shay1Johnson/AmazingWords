@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C079940F2D6105B400B337AC /* WinnerScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079940E2D6105B400B337AC /* WinnerScreenView.swift */; };
+		C07994132D61317600B337AC /* LoserScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07994122D61317600B337AC /* LoserScreenView.swift */; };
+		C079941B2D63945E00B337AC /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079941A2D63945600B337AC /* RulesView.swift */; };
+		C07994202D63B76E00B337AC /* AmazingWordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079941F2D63B76E00B337AC /* AmazingWordsApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6E7CF8542D5170D800C650F3 /* AmazingWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C079940E2D6105B400B337AC /* WinnerScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerScreenView.swift; sourceTree = "<group>"; };
+		C07994122D61317600B337AC /* LoserScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoserScreenView.swift; sourceTree = "<group>"; };
+		C079941A2D63945600B337AC /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		C079941F2D63B76E00B337AC /* AmazingWordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingWordsApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +43,10 @@
 		6E7CF84B2D5170D800C650F3 = {
 			isa = PBXGroup;
 			children = (
+				C079941F2D63B76E00B337AC /* AmazingWordsApp.swift */,
+				C079940E2D6105B400B337AC /* WinnerScreenView.swift */,
+				C07994122D61317600B337AC /* LoserScreenView.swift */,
+				C079941A2D63945600B337AC /* RulesView.swift */,
 				6E7CF8562D5170D800C650F3 /* AmazingWords */,
 				6E7CF8552D5170D800C650F3 /* Products */,
 			);
@@ -119,6 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07994132D61317600B337AC /* LoserScreenView.swift in Sources */,
+				C079941B2D63945E00B337AC /* RulesView.swift in Sources */,
+				C079940F2D6105B400B337AC /* WinnerScreenView.swift in Sources */,
+				C07994202D63B76E00B337AC /* AmazingWordsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
